@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -376,4 +377,384 @@ HTML • CSS • Docker • GitHub • Jenkins Pipeline
 </footer>
 
 </body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jenkins CI/CD Pipeline</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#141E30,#243B55);
+    color:white;
+    overflow-x:hidden;
+}
+
+/* Navigation */
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 10%;
+    background:rgba(255,255,255,.05);
+    backdrop-filter:blur(10px);
+    position:sticky;
+    top:0;
+}
+
+nav h2{
+    color:#00E5FF;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:25px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    transition:.3s;
+}
+
+nav ul li a:hover{
+    color:#00E5FF;
+}
+
+/* Hero */
+
+.hero{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:90vh;
+    text-align:center;
+    padding:20px;
+}
+
+.hero-card{
+
+    background:rgba(255,255,255,.1);
+    backdrop-filter:blur(12px);
+    padding:50px;
+    border-radius:20px;
+    width:800px;
+    box-shadow:0 15px 30px rgba(0,0,0,.4);
+    animation:fadeIn 1s ease;
+}
+
+.hero h1{
+    font-size:55px;
+    margin-bottom:15px;
+}
+
+.hero h2{
+    color:#00E5FF;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:18px;
+    line-height:30px;
+    color:#ddd;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:30px;
+    padding:14px 35px;
+    background:#00E5FF;
+    color:black;
+    border-radius:50px;
+    text-decoration:none;
+    font-weight:bold;
+    transition:.4s;
+}
+
+.btn:hover{
+    transform:translateY(-5px);
+    background:white;
+}
+
+/* Features */
+
+.section-title{
+    text-align:center;
+    margin:40px 0;
+    font-size:40px;
+}
+
+.features{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:30px;
+    padding:40px 10%;
+}
+
+.card{
+
+    background:white;
+    color:#222;
+    padding:30px;
+    border-radius:15px;
+    transition:.4s;
+    text-align:center;
+    box-shadow:0 10px 20px rgba(0,0,0,.2);
+
+}
+
+.card:hover{
+
+    transform:translateY(-10px);
+    background:#00E5FF;
+    color:black;
+}
+
+.card h3{
+    margin-bottom:15px;
+}
+
+/* Pipeline */
+
+.pipeline{
+
+    padding:60px 10%;
+    text-align:center;
+}
+
+.pipeline-box{
+
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:20px;
+    margin-top:30px;
+}
+
+.step{
+
+    background:white;
+    color:black;
+    padding:20px 35px;
+    border-radius:10px;
+    font-weight:bold;
+    position:relative;
+}
+
+.step::after{
+
+    content:"➜";
+    position:absolute;
+    right:-18px;
+    top:35%;
+    color:white;
+    font-size:22px;
+}
+
+.step:last-child::after{
+    display:none;
+}
+
+/* Footer */
+
+footer{
+
+    text-align:center;
+    padding:30px;
+    background:#111;
+    margin-top:50px;
+}
+
+/* Animation */
+
+@keyframes fadeIn{
+
+from{
+
+opacity:0;
+transform:translateY(40px);
+
+}
+
+to{
+
+opacity:1;
+transform:translateY(0);
+
+}
+
+}
+
+@media(max-width:768px){
+
+.hero h1{
+
+font-size:35px;
+
+}
+
+.hero-card{
+
+width:95%;
+
+}
+
+.step::after{
+
+display:none;
+
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav>
+
+<h2>🚀 Jenkins CI/CD</h2>
+
+<ul>
+
+<li><a href="#">Home</a></li>
+<li><a href="#">Pipeline</a></li>
+<li><a href="#">Docker</a></li>
+<li><a href="#">GitHub</a></li>
+
+</ul>
+
+</nav>
+
+<section class="hero">
+
+<div class="hero-card">
+
+<h1>Hello Jenkins 👋</h1>
+
+<h2>Docker + GitHub + Jenkins Pipeline</h2>
+
+<p>
+
+This web application is automatically built and deployed using a
+CI/CD Pipeline powered by Jenkins, Docker, and GitHub.
+Every push to GitHub triggers Jenkins to build and deploy the application.
+
+</p>
+
+<a href="#" class="btn">Explore Project</a>
+
+</div>
+
+</section>
+
+<h2 class="section-title">⚡ Technologies Used</h2>
+
+<section class="features">
+
+<div class="card">
+
+<h3>🐳 Docker</h3>
+
+<p>
+
+Containerizes the application for consistent deployment across environments.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>⚙ Jenkins</h3>
+
+<p>
+
+Automates Build, Test and Deployment through Jenkins Pipeline.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>💻 GitHub</h3>
+
+<p>
+
+Source code is version controlled and automatically integrated.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>☁ CI/CD</h3>
+
+<p>
+
+Continuous Integration and Continuous Deployment ensure faster delivery.
+
+</p>
+
+</div>
+
+</section>
+
+<section class="pipeline">
+
+<h2 class="section-title">🚀 Pipeline Flow</h2>
+
+<div class="pipeline-box">
+
+<div class="step">GitHub Push</div>
+
+<div class="step">Jenkins Build</div>
+
+<div class="step">Docker Image</div>
+
+<div class="step">Deploy</div>
+
+<div class="step">Live Website</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<h3>Developed for Jenkins Assignment</h3>
+
+<p>
+
+HTML • CSS • Docker • GitHub • Jenkins Pipeline
+
+</p>
+
+<p style="margin-top:10px;">
+© 2026 Jenkins CI/CD Demo
+</p>
+
+</footer>
+
+</body>
+>>>>>>> 84c436a3c8b34af2bc82ddbd3266dde260cebf0d
 </html>
